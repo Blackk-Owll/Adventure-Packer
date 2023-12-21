@@ -1,0 +1,9 @@
+Create table objects (
+	idObject int PRIMARY KEY ,
+    weigh int,
+    point int
+);
+Create table chosen_objects(
+	objectRow int PRIMARY KEY,
+    idObject int unique
+)

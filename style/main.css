@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url('../font/IrishGrover.ttf') format('woff');
+    /* Add additional formats if needed, e.g., woff2 */
+}
+
+*{
+    font-family: 'Irish Grover', sans-serif; 
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 97vh;
+}
+
+#wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/Background1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main .description {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-left: 30%;
+}
+.description h1{
+    color: #FC8630; /* Set the font color to ensure visibility on the background */
+    margin-bottom: 15%;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 35px;
+}
+.description p{
+    color: #000000; /* Set the font color to ensure visibility on the background */
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+.description button{
+    background-color: #FC8630;
+    border: none;
+    border-radius: 15px;
+    padding: 5%;
+    color: #fff;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.main img {
+    width: auto;
+    max-width: 40%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 30%;
+}
